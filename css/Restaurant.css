@@ -1,0 +1,172 @@
+body{
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    position: sticky;
+    top: 1px;
+    z-index: 10;
+    /* position: sticky;
+    top: 1px; */
+}
+.navbar-right{
+    z-index: 10;
+    padding-top: 17px;
+    padding-right: 20px;
+    a{
+        text-decoration: none;
+        color: black;
+        padding-right: 30px;
+        
+    }
+    
+}
+.navbar-right a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+.best{
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    h3{
+        background-color: rgb(188, 37, 37);
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 120px;
+    }
+}
+.best h3:hover{
+     background-color: rgb(255, 0, 0);
+     scale: 1.1;
+     transition-duration: 500ms;
+     border: 1px solid white;
+
+}
+.browse{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+
+}
+.card_parent{
+    gap: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 5;
+    
+}
+
+.card{
+    text-align: center;
+    width: 19%;
+    background-color: crimson;
+    margin-left:30px;
+    border: 5px solid grey;
+    border-radius: 10px;
+    h4{
+        color: rgb(0, 0, 0);
+        padding-bottom: 20px;
+    }
+    img{
+        height: 25vh;
+        padding-top: 2px;
+    }
+}
+.card:hover{
+    scale: 1.1;
+    transition-duration: 500ms;
+    background-color: firebrick;
+    border: 5px solid white;
+    h4{
+        color: azure;
+    }
+}
+.card1{
+    text-align: center;
+    width: 19%;
+    background-color: crimson;
+    margin-left:30px;
+    border: 5px solid grey;
+    border-radius: 10px;
+    h4{
+        color: rgb(0, 0, 0);
+        
+    }
+    img{
+        height: 25vh;
+        padding-top: 2px;
+    } 
+    button{
+        background-color: black;
+        color: aliceblue;
+        font-size: 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+}
+.card_parent1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+ul{
+    color: rgb(128, 146, 163);
+    line-height: 24px;
+}
+.card1:hover{
+    background-color: firebrick;
+    scale: 1.1;
+    transition-duration: 500ms;
+    border: 5px solid white;
+}
+li:hover{
+    
+        color: rgb(255, 0, 0);
+    
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; 
+}
+
+
+.loader {
+    width: 200px;
+    height: 200px;
+    animation: spin 2s linear infinite; 
+}
+
+
+.loader img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
